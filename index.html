@@ -45,15 +45,21 @@
     }
 
     /* ----- HERO SECTION ----- */
-    .hero {
-      height: 85vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 0 20px;
+	.hero iframe {
+      opacity: 0;
+      animation: fadeIn 2.3s ease forwards;
     }
+
+    .hero {
+     min-height: 85vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+      padding: 40px 20px;
+    }
+
 
     .hero h1 {
       font-size: 3.5rem;
@@ -144,7 +150,7 @@
 
   <!-- NAV -->
   <header>
-    <h2 style="margin:0;">BIENVENIDOS A LA EMPRESA DE TUS MAS GRANDES VIAJES </h2>
+    <h2 style="margin:0;">BIENVENIDOS A LA EMPRESA DE TUS </h2>
     <nav>
       <a href="#inicio">Inicio</a>
       <a href="#servicios">Estadisticas</a>
@@ -152,12 +158,26 @@
     </nav>
   </header>
 
-  <!-- HERO -->
-  <section id="inicio" class="hero">
-    <h1>Estamos creciendo en el centro del pais mas biodiverso del mundo</h1>
-    <p>Te ayudamos haciendo planes de viaje donde el unico limite son tus sueños y deseos</p>
-    <button class="btn">Empezemos por cumplirlos</button>
-  </section>
+<!-- HERO -->
+<section id="inicio" class="hero">
+
+  <h1>Estamos creciendo en el centro del pais mas biodiverso del mundo</h1>
+  <p>Te ayudamos haciendo planes de viaje donde el unico limite son tus sueños y deseos</p>
+
+  <!-- VIDEO DENTRO DEL HERO -->
+  <div style="margin-top: 30px;">
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/peVirDX8SSs"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+</iframe>
+
+  </div>
+
+  <button class="btn" style="margin-top: 30px;">Empezemos por cumplirlos</button>
+
+</section>
 
   <!-- SERVICIOS -->
   <section id="servicios" class="servicios">
